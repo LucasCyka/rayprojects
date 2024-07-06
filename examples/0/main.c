@@ -1,6 +1,6 @@
 #include <raylib.h>
 #include <stdio.h>
-#include "test.c"
+#include "test.h"
 
 int main(){
     const int screenWidth = 800;
@@ -11,6 +11,8 @@ int main(){
     SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
     int a =4;
+    int b = sumTest();
+    //a = sumTest();
     // Main game loop
     while (!WindowShouldClose())
     {
