@@ -14,11 +14,16 @@ int main(){
     int b = sumTest();
     //a = sumTest();
     // Main game loop
+    int i = 0;
+    int seconds = 0;
     while (!WindowShouldClose())
     {
         /* code */
-    
-    
+        i = i +1;
+        
+        if (i % 60 == 0 ){
+            seconds += 1;
+        }
         // Update
         //----------------------------------------------------------------------------------
         // TODO: Update your variables here
@@ -31,8 +36,10 @@ int main(){
             return 0;
         }
         ClearBackground(RAYWHITE);
-
+        char b  = i;
         DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+
+        DrawText(TextFormat("Time: %i",seconds),0,0,10,BLUE);
 
         EndDrawing();
         //----------------------------------------------------------------------------------
