@@ -14,9 +14,9 @@ int main(void){
     SetTargetFPS(60);
 
     gameState gameScreen = LOGO;
-
+    
     int timeout = 0;
-
+    
     while(!WindowShouldClose()){
         
 
@@ -62,7 +62,7 @@ int main(void){
 
             DrawText("ENDING, PRESS ENTER",0,0,32,WHITE);
         }
-
+        Vector2
 
 
         EndDrawing();
